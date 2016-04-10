@@ -1,0 +1,40 @@
+/**
+ * cat-web-push客户端
+ * @author Evan <tangzwgo@foxmail.com>
+ * @since 2016-04-02
+ */
+
+/* 封面 */
+.cover {
+    height: 200px; 
+    background:#666 url(cover-bg.jpg) no-repeat;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+.cover-head {height: 130px; width: 130px; margin-top: 20px;}
+.username {font-size:30px; color: #ffffff; text-align: center;}
+.connection-status {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size:20px;
+}
+.conn-btn {
+    display: none;
+}
+.online-num {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size:15px; 
+    color: #ffffff;
+}
+
+/* 消息列表 */
+.msg-empty {
+    text-align: center;
+}
+.msg-box {
+}

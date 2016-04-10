@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <foreach name="menuList" item="menu" key="menu_key">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="javascript:;">{$menu.name}</a></li>
+                    <foreach name="menu.submenu_list" item="submenu"  key="submenu_key">
+                        <li>
+                            <a href="{$submenu.url}">
+                                {$submenu.name}
+                                <if condition="strtoupper($currMenu) eq strtoupper($submenu['url'])">
+                                    &nbsp;&nbsp;<span aria-hidden="true" class="glyphicon glyphicon-hand-left"></span>
+                                </if>                        
+                            </a>
+                        </li>
+                    </foreach>
+                </ul>
+            </foreach>            
+        </div>

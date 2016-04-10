@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>虾扯</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- cat-web-push 核心 JavaScript 文件 -->
+        <script src="cat_web_push_client.js"></script>
+        <!-- cat-web-push 核心 CSS 文件 -->
+        <link rel="stylesheet" href="cat_web_push_client.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!-- 封面 -->
+            <div class="row cover">
+                <img src="head.png" alt="头像" class="img-circle img-responsive center-block cover-head">
+                <div class="username">
+                    Evan
+                </div>
+                <div class="connection-status">
+                    <button type="button" class="btn btn-danger btn-sm close-btn">
+                        <span aria-hidden="true" class="glyphicon glyphicon-off"></span>
+                    </button>
+                    <button type="button" class="btn btn-info btn-sm conn-btn">
+                        <span aria-hidden="true" class="glyphicon glyphicon-signal"></span>
+                    </button>
+                </div>
+                <div class="online-num">
+                    当前在线：<span class="online-num-view">0</span>人
+                </div>
+            </div>
+            <!-- 消息列表 -->
+            <div class="row msg-box">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">消息列表</h3>
+                    </div>
+                    <div class="panel-body msg-list">
+                        <div class="msg-empty">
+                            消息列表空空哒~~
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
