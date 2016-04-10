@@ -1,2 +1,2 @@
 # cat-push
-基于workerman和laravel开发的一套APP消息推送系统
+基于workerman开发的一套多平台消息推送系统
