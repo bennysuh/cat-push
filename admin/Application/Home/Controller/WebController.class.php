@@ -14,11 +14,6 @@ class WebController extends BaseController {
      * 在线用户列表
      */
     public function userList() {
-    	$serverList = C('SERVER_LIST');
-    	\Home\ORG\Utils\Gateway::$registerAddress = $serverList['registerServer']['ip'].':'.$serverList['registerServer']['port'];
-    	$client_msg = "收到一条通知";
-    	$clientList = \Home\ORG\Utils\Gateway::sendToClient('7f0000010f3c00000004',ReturnJson(999,$client_msg));
-    	var_dump($clientList);exit();
         $this->loadFrame('user_list');
     }
     
