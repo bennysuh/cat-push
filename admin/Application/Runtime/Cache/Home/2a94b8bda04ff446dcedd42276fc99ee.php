@@ -2,34 +2,13 @@
     <h1 class="page-header">系统概览</h1>
 
     <div class="row placeholders">
-        <div class="col-xs-6 col-sm-3">
+    	<?php if(is_array($serverList)): foreach($serverList as $key=>$server): ?><div class="col-xs-6 col-sm-3">
             <dl>
-                <dt><h4>tcp服务</h4></dt>
-                <dd>tcp://<?php echo ($tcp["host"]); ?>:<?php echo ($tcp["port"]); ?></dd>
-                <dd><p class="text-success">运行中</p></dd>
+                <dt><h4><?php echo ($server["name"]); ?></h4></dt>
+                <dd><?php if($server["protocol"] != ''): echo ($server["protocol"]); ?>://<?php echo ($server["ip"]); ?>:<?php echo ($server["port"]); else: ?>-<?php endif; ?></dd>
+                <dd><p class="text-success"><?php echo ($server["status_desc"]); ?></p></dd>
             </dl>                                    
-        </div>
-        <div class="col-xs-6 col-sm-3">   
-            <dl>
-                <dt><h4>websocket服务</h4></dt>
-                <dd>websocket://<?php echo ($websocket["host"]); ?>:<?php echo ($websocket["port"]); ?></dd>
-                <dd><p class="text-success">运行中</p></dd>
-            </dl>
-        </div>
-        <div class="col-xs-6 col-sm-3">  
-            <dl>
-                <dt><h4>http服务</h4></dt>
-                <dd>http://<?php echo ($http["host"]); ?>:<?php echo ($http["port"]); ?></dd>
-                <dd><p class="text-success">运行中</p></dd>
-            </dl>
-        </div>
-        <div class="col-xs-6 col-sm-3">  
-            <dl>
-                <dt><h4>channel服务</h4></dt>
-                <dd><?php echo ($channel["host"]); ?>:<?php echo ($channel["port"]); ?></dd>
-                <dd><p class="text-success">运行中</p></dd>
-            </dl>
-        </div>        
+        </div><?php endforeach; endif; ?>          
     </div>
     <h2 class="sub-header">客户端连接监控</h2>
     <div class="table-responsive">

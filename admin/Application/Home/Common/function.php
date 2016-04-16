@@ -43,6 +43,24 @@ function ReturnMsg($ResponseCode = 999,$ResponseMsg = '调用成功',$ResponseDa
 }
 
 /**
+ * 返回Json数据
+ * @param type $ResponseCode    响应码
+ * @param type $ResponseMsg     响应消息
+ * @param type $ResponseData    响应数据
+ */
+function ReturnJson($ResponseCode = 999,$ResponseMsg = '调用成功',$ResponseData = array()){
+	if(!is_numeric($ResponseCode)) {
+		return false;
+	}
+	$result = array(
+			'Code'=>$ResponseCode,
+			'Msg'=>$ResponseMsg,
+			'Data'=>$ResponseData
+	);
+	return json_encode($result);
+}
+
+/**
  * 接口数据响应
  * @param type $ResponseCode    响应码
  * @param type $ResponseMsg     响应消息
@@ -144,4 +162,20 @@ function xml_to_encode($data) {
         $xml .= "</{$key}>\n";
     }
     return $xml;
+}
+
+/**
+ * 检测端口是否开启
+ * @param String $host ip地址
+ * @param String $port 端口
+ * @param int $timeout 超时时间
+ * @return string
+ */
+function check_port($host, $port, $timeout=1) {
+	$fp = @fsockopen($host, $port, $errno, $errstr, $timeout);
+	if ($fp) {
+		return true;
+	} else {
+		return false;
+	}
 }

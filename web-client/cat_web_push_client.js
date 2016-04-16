@@ -12,7 +12,7 @@ $(function(){
     //连接服务器
     $(".close-btn").click(function(){
         // 假设服务端ip为127.0.0.1
-        ws = new WebSocket("ws://127.0.0.1:4236");
+        ws = new WebSocket("ws://127.0.0.1:8383");
         ws.onopen = function() {
             //链接成功
             $('.conn-btn').show();
@@ -21,7 +21,7 @@ $(function(){
         ws.onmessage = function(e) {
             var data = e.data;
             var dataObj = JSON.parse(data);
-            if(dataObj.type == 'msg') {
+            if(dataObj.Code == 999) {
                 //收到服务器的消息
                 //隐藏空消息提示
                 $(".msg-empty").hide();
@@ -30,12 +30,12 @@ $(function(){
                 var html = [];
                 html.push('<div class="alert alert-info alert-dismissible" role="alert">');
                 html.push('<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
-                html.push(dataObj.content);
+                html.push(dataObj.Msg);
                 html.push('</div>');
                 $('.msg-list').append(html.join(''));
-            } else if(dataObj.type == 'online') {
+            } else if(dataObj.Code == 1001) {
                 //收到服务器推送的在线人数统计
-                var num = dataObj.num;
+                var num = dataObj.Data.num;
                 $(".online-num-view").text(num);
             }
         };

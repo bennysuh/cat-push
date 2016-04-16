@@ -13,10 +13,26 @@ class IndexController extends BaseController {
      * 首页
      */
     public function index(){
-        $this->assign('tcp', C('TCP_SERVER'));
-        $this->assign('websocket', C('WEBSOCKET_SERVER'));
-        $this->assign('http', C('HTTP_SERVER'));
-        $this->assign('channel', C('CHANNEL_SERVER'));
+    	$serverList = C('SERVER_LIST');
+    	foreach($serverList as $key => $server) {
+    		//判断服务是否正在运行
+    		if(!isset($status)) {
+    			$status = true;
+    		}
+    		if($server['ip'] && $server['port']) {
+    			$status = check_port($server['ip'], $server['port'], 0.1);
+    		}
+    		
+    		if($status) {
+    			$serverList[$key]['status'] = 1;
+    			$serverList[$key]['status_desc'] = '运行中';
+    		} else {
+    			$serverList[$key]['status'] = 0;
+    			$serverList[$key]['status_desc'] = '未运行';
+    		}
+    	}
+    	
+        $this->assign('serverList', $serverList);
         $this->loadFrame('index');
     }
 }

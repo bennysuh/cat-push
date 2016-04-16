@@ -2,34 +2,15 @@
     <h1 class="page-header">系统概览</h1>
 
     <div class="row placeholders">
-        <div class="col-xs-6 col-sm-3">
+    	<foreach name='serverList' item='server'>
+    	<div class="col-xs-6 col-sm-3">
             <dl>
-                <dt><h4>tcp服务</h4></dt>
-                <dd>tcp://{$tcp.host}:{$tcp.port}</dd>
-                <dd><p class="text-success">运行中</p></dd>
+                <dt><h4>{$server.name}</h4></dt>
+                <dd><if condition="$server.protocol neq ''">{$server.protocol}://{$server.ip}:{$server.port}<else />-</if></dd>
+                <dd><p class="text-success">{$server.status_desc}</p></dd>
             </dl>                                    
         </div>
-        <div class="col-xs-6 col-sm-3">   
-            <dl>
-                <dt><h4>websocket服务</h4></dt>
-                <dd>websocket://{$websocket.host}:{$websocket.port}</dd>
-                <dd><p class="text-success">运行中</p></dd>
-            </dl>
-        </div>
-        <div class="col-xs-6 col-sm-3">  
-            <dl>
-                <dt><h4>http服务</h4></dt>
-                <dd>http://{$http.host}:{$http.port}</dd>
-                <dd><p class="text-success">运行中</p></dd>
-            </dl>
-        </div>
-        <div class="col-xs-6 col-sm-3">  
-            <dl>
-                <dt><h4>channel服务</h4></dt>
-                <dd>{$channel.host}:{$channel.port}</dd>
-                <dd><p class="text-success">运行中</p></dd>
-            </dl>
-        </div>        
+    	</foreach>          
     </div>
     <h2 class="sub-header">客户端连接监控</h2>
     <div class="table-responsive">
