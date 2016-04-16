@@ -5,8 +5,9 @@
             <thead>
                 <tr>
                     <th>序号</th>
-                    <th>用户ID</th>
+                    <th>客户端ID</th>
                     <th>平台用户ID</th>
+                    <th>用户组</th>
                     <th>操作</th>
                 </tr>
             </thead>
@@ -15,24 +16,28 @@
                     <td>1</td>
                     <td>12343sdfsds</td>
                     <td>12</td>
+                    <td>sh</td>
                     <td>推送</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>12343sdfsds</td>
                     <td>12</td>
+                    <td>sh</td>
                     <td>推送</td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>12343sdfsds</td>
                     <td>12</td>
+                    <td>sh</td>
                     <td>推送</td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>12343sdfsds</td>
                     <td>12</td>
+                    <td>sh</td>
                     <td>推送</td>
                 </tr>
             </tbody>
