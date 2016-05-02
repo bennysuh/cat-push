@@ -12,34 +12,17 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>12343sdfsds</td>
-                    <td>12</td>
-                    <td>sh</td>
-                    <td>推送</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>12343sdfsds</td>
-                    <td>12</td>
-                    <td>sh</td>
-                    <td>推送</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>12343sdfsds</td>
-                    <td>12</td>
-                    <td>sh</td>
-                    <td>推送</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>12343sdfsds</td>
-                    <td>12</td>
-                    <td>sh</td>
-                    <td>推送</td>
-                </tr>
+            	<php>$i = 1;</php>
+            	<foreach name="userList" item="user" key="connection_id">
+	            	<tr>
+	                    <td>{$i}</td>
+	                    <td>{$connection_id}</td>
+	                    <td></td>
+	                    <td></td>
+	                    <td>推送</td>
+	                </tr>
+	                <php>$i += 1;</php>
+            	</foreach>                               
             </tbody>
         </table>
     </div>

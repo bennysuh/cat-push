@@ -12,7 +12,7 @@ $(function(){
     //连接服务器
     $(".close-btn").click(function(){
         // 假设服务端ip为127.0.0.1
-        ws = new WebSocket("ws://127.0.0.1:8383");
+        ws = new WebSocket("ws://192.168.245.128:8383");
         ws.onopen = function() {
             //链接成功
             $('.conn-btn').show();

@@ -1,0 +1,250 @@
+[ 2016-04-28T11:00:19+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002849s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002895s ]
+NOTIC: [8] Undefined index: _USER_ D:\workspace\cat-push\admin\Application\Runtime\Cache\Home\a2dce8bbd958434f8512d260119226ac.php ç¬¬ 40 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008456s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.026715s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016766s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.008632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016997s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.046595s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022470s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.025694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.039751s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.068377s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018941s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.048750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.059290s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php:95) D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php ç¬¬ 91 è¡Œ.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php:95) D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php ç¬¬ 92 è¡Œ.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php:95) D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php ç¬¬ 93 è¡Œ.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007724s ]
+
+[ 2016-04-28T11:00:19+08:00 ] 127.0.0.1 /login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000438s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000489s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-04-28T11:00:19+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+
+[ 2016-04-28T11:00:19+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+
+[ 2016-04-28T11:00:34+08:00 ] 127.0.0.1 /login/loginCommit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-04-28T11:00:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018917s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.019485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023949s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003342s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.020439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.023036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.027372s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002795s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.024355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.026453s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php:95) D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php ç¬¬ 91 è¡Œ.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php:95) D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php ç¬¬ 92 è¡Œ.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php:95) D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php ç¬¬ 93 è¡Œ.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-04-28T11:00:43+08:00 ] 127.0.0.1 /app/pushMsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+ERR: æ— æ³•åŠ è½½æŽ§åˆ¶å™¨:App
+
+[ 2016-04-28T11:00:47+08:00 ] 127.0.0.1 /web/pushMsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005359s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005197s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011450s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009304s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.005966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014951s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017706s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001954s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.015566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.017173s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php:95) D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php ç¬¬ 91 è¡Œ.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php:95) D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php ç¬¬ 92 è¡Œ.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php:95) D:\workspace\cat-push\admin\ThinkPHP\Library\Think\View.class.php ç¬¬ 93 è¡Œ.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2016-04-28T11:01:45+08:00 ] 127.0.0.1 /web/pushCommit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-04-28T11:05:58+08:00 ] 127.0.0.1 /web/userList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+NOTIC: [2] stream_socket_client():  D:\workspace\cat-push\admin\Application\Home\ORG\Utils\Gateway.class.php ç¬¬ 570 è¡Œ.
+ERR: Can not connect to tcp://127.0.0.1:1236 ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+
+[ 2016-04-28T11:07:18+08:00 ] 127.0.0.1 /web/userList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+NOTIC: [2] stream_socket_client():  D:\workspace\cat-push\admin\Application\Home\ORG\Utils\Gateway.class.php ç¬¬ 570 è¡Œ.
+ERR: Can not connect to tcp://127.0.0.1:1236 ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+
+[ 2016-04-28T11:08:13+08:00 ] 127.0.0.1 /web/userList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+NOTIC: [2] stream_socket_client():  D:\workspace\cat-push\admin\Application\Home\ORG\Utils\Gateway.class.php ç¬¬ 576 è¡Œ.
+ERR: Can not connect to tcp://127.0.0.1:1236 ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+
+[ 2016-04-28T11:08:36+08:00 ] 127.0.0.1 /web/userList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+NOTIC: [2] stream_socket_client():  D:\workspace\cat-push\admin\Application\Home\ORG\Utils\Gateway.class.php ç¬¬ 576 è¡Œ.
+ERR: Can not connect to tcp://127.0.0.1:1236 ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+

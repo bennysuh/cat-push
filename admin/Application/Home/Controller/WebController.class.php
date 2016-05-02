@@ -1,7 +1,6 @@
 <?php
 namespace Home\Controller;
 use Home\Controller\BaseController;
-use Home;
 
 /**
  * WEB消息推送
@@ -14,6 +13,10 @@ class WebController extends BaseController {
      * 在线用户列表
      */
     public function userList() {
+    	//获取用户列表
+    	$userList = \Home\ORG\Utils\Gateway::getALLClientInfo();
+    	
+    	$this->assign('userList', $userList);
         $this->loadFrame('user_list');
     }
     
@@ -64,8 +67,9 @@ class WebController extends BaseController {
     			if(!$uidList) {
     				return Response(1003,'请添加要推送的用户');
     			}
-    			
-    			\Home\ORG\Utils\Gateway::sendToAll(ReturnJson(999,$content),$uidList);
+    			foreach ($uidList as $uid) {
+    				\Home\ORG\Utils\Gateway::sendToClient($uid, ReturnJson(999,$content));
+    			}    			
     			break;
     	}
     	

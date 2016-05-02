@@ -22,7 +22,7 @@ require_once __DIR__ . '/../../Workerman/Autoloader.php';
 Autoloader::setRootPath(__DIR__);
 
 // gateway_websocket 进程，用于处理websocket请求
-$gateway_websocket = new Gateway("websocket://127.0.0.1:8383");
+$gateway_websocket = new Gateway("websocket://0.0.0.0:8383");
 // gateway名称，status方便查看
 $gateway_websocket->name = 'WebPushGateway';
 // gateway进程数

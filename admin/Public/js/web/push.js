@@ -75,7 +75,7 @@ $(function(){
 				uidList.push($(this).attr("data-uid"));
 			});
 			
-			if(!!!uidList) {
+			if(uidList.length == 0) {
 				$(".err-msg").text("请输入添加要推送的用户");
 				return;
 			}
