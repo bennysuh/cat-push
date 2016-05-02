@@ -2,8 +2,8 @@
 namespace Applications\Push\Utils;
 /**
  * 工具类
- * @author	Evan
- * @since	2016-04-16
+ * @author Evan
+ * @since 2016年4月16日
  */
 class Tools {
 	/**
@@ -22,5 +22,17 @@ class Tools {
 				'Data'=>$ResponseData
 		);
 		return json_encode($result);
+	}
+	
+	/**
+	 * json转数组
+	 * @param unknown $json
+	 */
+	public static function JsonToArray($json) {
+		$result = json_decode($json, true);
+		if(!is_array($result)) {
+			$result = $json;
+		}
+		return $result;
 	}
 }

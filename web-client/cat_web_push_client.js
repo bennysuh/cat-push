@@ -9,6 +9,9 @@ $(function(){
     var ws;
     var empty_html = '<div class="msg-empty">消息列表空空哒~~</div>';
     
+    //生成一个随机的uid
+    var uid = Math.floor(Math.random()*100);
+    uid = 1;
     //连接服务器
     $(".close-btn").click(function(){
         // 假设服务端ip为127.0.0.1
@@ -17,6 +20,12 @@ $(function(){
             //链接成功
             $('.conn-btn').show();
             $('.close-btn').hide();
+            
+            //绑定平台id
+            var msgObj = new Object();
+            msgObj.action = "bindUid";
+            msgObj.uid = uid;
+            ws.send(JSON.stringify(msgObj));
         };
         ws.onmessage = function(e) {
             var data = e.data;

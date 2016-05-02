@@ -17,8 +17,12 @@
 	            	<tr>
 	                    <td>{$i}</td>
 	                    <td>{$connection_id}</td>
-	                    <td></td>
-	                    <td></td>
+	                    <td>{$user.userInfo.id}</td>
+	                    <td>
+	                    	<foreach name="user.userGroupList" item="group">
+	                    		{$group.name}；
+	                    	</foreach>
+	                    </td>
 	                    <td>推送</td>
 	                </tr>
 	                <php>$i += 1;</php>
